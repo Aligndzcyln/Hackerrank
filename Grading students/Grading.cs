@@ -14,10 +14,10 @@ class Result
         {
             if(grades[i] >= 38)
             {
-                var rest = grades[i] % 5;
-                if((5 - rest) < 3)
+                var rest = 5 - (grades[i] % 5);
+                if(rest < 3)
                 {
-                    grades[i] = grades[i] + (5 - rest);
+                    grades[i] = grades[i] + rest;
                 }
             }
         }
